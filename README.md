@@ -7,7 +7,6 @@ Para que esses dados fossem inseridos na base da Big Query criada, usamos a apli
 Para utilização da API precisamos de um import:
 ```
 from polygon import RESTClient
-
 ```
 
  <br>
