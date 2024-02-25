@@ -1,9 +1,9 @@
 ### Grupo 05<br>
-##*Bruna Alessandra de Freitas
-##*Edson Pegoraro
-##*Marcos Suda
-##*Hermerson Lopes
-##*Thaiany Paina
+*Bruna Alessandra de Freitas<br>
+*Edson Pegoraro<br>
+*Marcos Suda<br>
+*Hermerson Lopes<br>
+*Thaiany Paina
 
 ### Introdução <br>
 Conforme solicitado, nesse trabalho criamos uma aplicação que se comunica com a api da Polygon.io trazendo informações de cotações/índices, enviando os dados coletados a um banco de dados do Google BigQuery.<br>
