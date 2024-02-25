@@ -80,7 +80,7 @@ export AIRFLOW_HOME=/home/edsonpegorarotv/airflow_project
 
 airflow webserver --port 8080
 ```
-### Instalação do POSTGRESQL
+### Instalação do Postgresql
 
 Para PRODUÇÃO a Apache recomenda a instalação do banco Postgresql para ser usado pelo AIRFLOW
 
@@ -96,6 +96,23 @@ No arquivo airflow.cfg alteramos o caminho do  sql_alchemy_conn
 ```
 sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow 
 ```
+
+### Google BigQUery
+
+Criamos um novo projeto no BigQuery nomeado Koru. Nele criamos uma base chamada <b>Indices</b>. Onde a aplicação enviará para uma tabela chamada Euro os dados da cotação.
+```
+sudo -u postgres psql 
+
+CREATE DATABASE airflow;
+CREATE USER airflow WITH ENCRYPTED PASSWORD 'sua_senha';
+GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow_user;
+```
+
+No arquivo airflow.cfg alteramos o caminho do  sql_alchemy_conn
+```
+sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow 
+```
+
 
 
 
