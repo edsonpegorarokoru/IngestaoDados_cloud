@@ -80,6 +80,22 @@ export AIRFLOW_HOME=/home/edsonpegorarotv/airflow_project
 
 airflow webserver --port 8080
 ```
+### Instalação do POSTGRESQL
+
+Para PRODUÇÃO a Apache recomenda a instalação do banco Postgresql para ser usado pelo AIRFLOW
+
+```
+sudo -u postgres psql 
+
+CREATE DATABASE airflow;
+CREATE USER airflow WITH ENCRYPTED PASSWORD 'sua_senha';
+GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow_user;
+```
+
+No arquivo airflow.cfg alteramos o caminho do  sql_alchemy_conn
+```
+sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow 
+```
 
 
 
