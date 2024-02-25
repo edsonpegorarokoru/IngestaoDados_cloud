@@ -99,7 +99,14 @@ sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow
 
 ### Google BigQUery
 
-Criamos um novo projeto no BigQuery nomeado Koru. Nele criamos uma base chamada <b>Indices</b>. Onde a aplicação enviará para uma tabela chamada Euro os dados da cotação.
+Criamos um novo projeto no BigQuery nomeado <b>Koru</b>. Nele criamos uma base chamada <b>Indices</b>. Onde a aplicação enviará para uma tabela chamada <b>Euro</b> os dados da cotação.
+
+<img src="bigquery.png">
+
+
+
+
+
 ```
 sudo -u postgres psql 
 
