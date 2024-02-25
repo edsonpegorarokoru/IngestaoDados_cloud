@@ -107,26 +107,3 @@ Criamos um novo projeto no BigQuery nomeado <b>Koru</b>. Nele criamos uma base c
 
 
 
-
-```
-sudo -u postgres psql 
-
-CREATE DATABASE airflow;
-CREATE USER airflow WITH ENCRYPTED PASSWORD 'sua_senha';
-GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow_user;
-```
-
-No arquivo airflow.cfg alteramos o caminho do  sql_alchemy_conn
-```
-sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow 
-```
-
-
-
-
-
-
-
-
-
-
