@@ -8,6 +8,15 @@ Para utilização da API precisamos de um import:
 ```
 from polygon import RESTClient
 ```
+E também chamar a id da api:
+```
+client = RESTClient('4HntDYSlAIfaSCgx_EAYVBb24ijvMpdu')
+```
+
+
+
+
+
 
  <br>
 
