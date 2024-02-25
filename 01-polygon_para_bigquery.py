@@ -83,3 +83,4 @@ if aggs_with_date:
     print("Dados enviados para o BigQuery com sucesso.")
 else:
     print("Não há dados disponíveis para exibir.")
+ 
