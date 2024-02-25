@@ -1,9 +1,20 @@
+### Grupo 05<br>
+##*Bruna Alessandra de Freitas
+##*Edson Pegoraro
+##*Marcos Suda
+##*Hermerson Lopes
+##*Thaiany Paina
+
 ### Introdução <br>
 Conforme solicitado, nesse trabalho criamos uma aplicação que se comunica com a api da Polygon.io trazendo informações de cotações/índices, enviando os dados coletados a um banco de dados do Google BigQuery.<br>
 
 Para que esses dados fossem inseridos na base da Big Query criada, usamos a aplicação Apache Airflow, que executa o arquivo produzido em python, e a cada 20 minutos envia a uma tabela desse dataset.<br>
 
 ### Acesso ao Airflow
+Endereço:
+```
+http://34.125.71.215:8080/
+```
 Usuário:
 ```
 admin
