@@ -33,16 +33,12 @@ credentials_info = {
 }
 ```
 
-
-
-
-
-E também chamar a id da api:
+### Coletagem, Lógica e Ingestão de dados
+Criamos em um único arquivo nomeado:
 ```
-client = RESTClient('4HntDYSlAIfaSCgx_EAYVBb24ijvMpdu')
+01-polygon_para_bigquery
 ```
-
-
+Presente aqui no Github para avaliação
 
 
 
