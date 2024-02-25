@@ -3,6 +3,17 @@ Conforme solicitado, nesse trabalho criamos uma aplicação que se comunica com 
 
 Para que esses dados fossem inseridos na base da Big Query criada, usamos a aplicação Apache Airflow, que executa o arquivo produzido em python, e a cada 20 minutos envia a uma tabela desse dataset.<br>
 
+### Acesso ao Airflow
+Usuário:
+```
+from polygon import RESTClient
+```
+Senha:
+```
+koru135
+```
+
+
 ### API Polygon.io
 Para utilização da API precisamos de um import:
 ```
