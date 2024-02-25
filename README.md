@@ -51,6 +51,7 @@ Presente aqui no Github para avaliação
 ### Criação de uma VM na Google Cloud
 Foi criada uma VM com 2 núcleos de processamento e 16GB de Memória RAM, usando como sistema operacional o DEBIAN 11.9
 Nela liberamos publicamente o IP e a porta 8080 para acesso externo do AIRFLOW
+<img src="googlecloud.png">
 ### Instalação do Airflow
 ```
 sudo apt-get update
@@ -97,7 +98,7 @@ No arquivo airflow.cfg alteramos o caminho do  sql_alchemy_conn
 sql_alchemy_conn = postgresql+psycopg2://airflow:airflow@localhost/airflow 
 ```
 
-### Google BigQUery
+### Google BigQuery
 
 Criamos um novo projeto no BigQuery nomeado <b>Koru</b>. Nele criamos uma base chamada <b>Indices</b>. Onde a aplicação enviará para uma tabela chamada <b>Euro</b> os dados da cotação.
 
