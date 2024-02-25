@@ -38,9 +38,48 @@ Criamos em um único arquivo nomeado:
 ```
 01-polygon_para_bigquery
 ```
+Presente aqui no Github para avaliação.
+
+Nesse arquivo ele pega as informações da cotação do EUR para Dolar, e sempre traz a última linha encontrada. Após coletagem envia esse dado a uma tabela do Banco de Dados criado na Google BigQuery
+
+### Arquivo DAG
+Criamos um único arquivo DAG com aciona o Python e executa o arquivo 01-polygon_para_bigquery a cada 20 minutos:
+```
+02-dag_koru_py
+```
 Presente aqui no Github para avaliação
+### Criação de uma VM na Google Cloud
+Foi criada uma VM com 2 núcleos de processamento e 16GB de Memória RAM, usando como sistema operacional o DEBIAN 11.9
+Nela liberamos publicamente o IP e a porta 8080 para acesso externo do AIRFLOW
+### Instalação do Airflow
+```
+sudo apt-get update
+sudo apt-get install python3-pip
+pip3 --version
+sudo pip3 install virtualenv
+virtualenv -p python venv
+source venv/bin/activate
+pip3 install "apache-airflow==2.5.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-main/constraints-3.8.txt"
+mkdir airflow_project
+cd airflow_project
+export AIRFLOW_HOME=/home/edsonpegorarotv/airflow_project
+airflow db init
+airflow users create \
+    --username admin \
+    --firstname admin \
+    --lastname admin \
+    --role Admin \
+    --email edsonpegoraro@gmail.com
+airflow users list
+airflow scheduler
 
+-----------Segundo Terminal ----------
+source venv/bin/activate
 
+export AIRFLOW_HOME=/home/edsonpegorarotv/airflow_project
+
+airflow webserver --port 8080
+```
 
 
 
