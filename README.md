@@ -6,7 +6,7 @@ Para que esses dados fossem inseridos na base da Big Query criada, usamos a apli
 ### Acesso ao Airflow
 Usuário:
 ```
-from polygon import RESTClient
+admin
 ```
 Senha:
 ```
