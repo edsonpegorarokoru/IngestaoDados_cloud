@@ -126,6 +126,14 @@ Criamos um novo projeto no BigQuery nomeado <b>Koru</b>. Nele criamos uma base c
 
 <img src="bigquery.png">
 
+### Loocker Studio - Relatório BI Realtime
+
+Criamos um relatório no Looker Studio (antigo DataStudio) para acompanhar a ingestão dos Dados:
+
+```
+https://lookerstudio.google.com/reporting/f04e1a82-2619-4e49-969f-84a98becbd37
+```
+
 ### Dificuldades
 A maioria dos módulos da Polygon.io são pagas, como todas os módulos Real Time. Escolhemos o Euro para Dólar, por ser free, porém é um dado diário e não minuto a minuto. Configuramos ele como se fosse realtime com intuito acadêmico apenas. Onde o arquivo DAG chama a ingestão a cada 20 minutos.
 
