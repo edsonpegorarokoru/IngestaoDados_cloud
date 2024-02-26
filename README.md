@@ -135,6 +135,6 @@ https://lookerstudio.google.com/reporting/f04e1a82-2619-4e49-969f-84a98becbd37
 ```
 
 ### Dificuldades
-A maioria dos módulos da Polygon.io são pagas, como todas os módulos Real Time. Escolhemos o Euro para Dólar, por ser free, porém é um dado diário e não minuto a minuto. Configuramos ele como se fosse realtime com intuito acadêmico apenas. Onde o arquivo DAG chama a ingestão a cada 20 minutos.
+A maioria dos módulos da Polygon.io são pagas, como todos os módulos Real Time. Escolhemos o Euro para Dólar, por ser free, porém é um dado diário e não minuto a minuto. Configuramos ele como se fosse realtime com intuito acadêmico apenas. Onde o arquivo DAG chama a ingestão a cada 20 minutos.
 
 O AirFlow em Produção é bem diferente do que instalado em uma cloud. Exige troca de banco de dados e até um executor, com pouco material explicativo nas redes. Para nós iniciantes foi complicado. Conseguimos trocar o banco de dados para PostGreSQL mas o executor Celery recomendado não conseguimos encontrar material. Com isso nosso executor do Airflow para de executar após 15 minutos de ação.
