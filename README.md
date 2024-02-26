@@ -82,7 +82,7 @@ pip3 --version
 sudo pip3 install virtualenv
 virtualenv -p python venv
 source venv/bin/activate
-pip3 install "apache-airflow==2.5.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-main/constraints-3.8.txt"
+pip3 install "apache-airflow==2.5.0" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.2/constraints-3.9.txt"
 mkdir airflow_project
 cd airflow_project
 export AIRFLOW_HOME=/home/edsonpegorarotv/airflow_project
