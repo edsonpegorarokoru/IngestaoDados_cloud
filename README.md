@@ -65,7 +65,7 @@ Presente aqui no Github para avaliação.
 Nesse arquivo ele pega as informações da cotação do EUR para Dolar, e sempre traz a última linha encontrada. Após coletagem envia esse dado a uma tabela do Banco de Dados criado na Google BigQuery
 
 ### Arquivo DAG
-Criamos um único arquivo DAG com aciona o Python e executa o arquivo 01-polygon_para_bigquery a cada 20 minutos:
+Criamos um único arquivo DAG que aciona o Python e executa o arquivo 01-polygon_para_bigquery a cada 20 minutos:
 ```
 02-dag_koru_py
 ```
